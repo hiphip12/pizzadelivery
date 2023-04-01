@@ -7,7 +7,7 @@ const deliveryInput = document.querySelector('#deliveryInput');
 
 const nameOutput = document.querySelector('#nameOutput');
 const sizeOutput = document.querySelector('#pizzaPrice');
-const toppingsOutput = document.querySelector('#extraToppingsSum');
+const toppingsOutput = document.querySelector('#toppingsPrice');
 const deliveryOutput = document.querySelector('#deliveryPrice')
 const totalPrice = document.querySelector('#totalPrice');
 
