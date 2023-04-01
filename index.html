@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enitan/Pablo Pizza Ordering task</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <section id="side-picture"></section>
+    <section id="input-box">
+        <h1>Pizza Ordering</h1>
+        <h2>Please order below</h2>
+        <p id="ad">
+            First 4 toppings are free
+            <br>
+            Extra toppings 0,50€ each
+        </p>
+        <form>
+            <div id="name-wrapper">
+                <label for="nameInput"> Please tell us your name:</label>
+                <input type="text" id="nameInput">
+            </div>
+            <h3>Choose Pizza Size</h3>
+            <div class="formGroup1">
+                <label for="small">For 2 persons = 7,50€</label>
+                <input type="radio" id="small" name="pizza" value="7.50" />
+            </div>
+            <div class="formGroup1">
+                <label for="medium">For 4 persons = 10,50€</label>
+                <input type="radio" id="medium" name="pizza" value="10.50" />
+            </div>
+            <div class="formGroup1">
+                <label for="large">For 6 persons = 12,50€</label>
+                <input type="radio" id="large" name="pizza" value="12.50" />
+            </div>
+            <div class="formGroup1">
+                <label for="extralarge">For 8 persons = 15,50€</label>
+                <input type="radio" id="extralarge" name="pizza" value="15.50" />
+            </div>
+            <h3>Choose Toppings</h3>
+            <div class="formGroup2">
+                <label for="">Ham</label>
+                <input type="checkbox" value="1">
+            </div>
+            <div class="formGroup2">
+                <label for="">Extra Ham</label>
+                <input type="checkbox" value="1">
+            </div>
+            <div class="formGroup2">
+                <label for="">Extra cheese</label>
+                <input type="checkbox" value="1">
+            </div>
+            <div class="formGroup2">
+                <label for="">Minced meat</label>
+                <input type="checkbox" value="1">
+            </div>
+            <div class="formGroup2">
+                <label for="">Extra minced meat</label>
+                <input type="checkbox" value="1">
+            </div>
+            <div class="formGroup2">
+                <label for="">Onions</label>
+                <input type="checkbox" value="1">
+            </div>
+            <div class="formGroup2">
+                <label for="">Extra Onions</label>
+                <input type="checkbox" value="1">
+            </div>
+            <div class="formGroup2">
+                <label for="">Chicken</label>
+                <input type="checkbox" value="1">
+            </div>
+            <div class="formGroup2">
+                <label for="">Extra chicken</label>
+                <input type="checkbox" value="1">
+            </div>
+            <div class="formGroup2">
+                <label for="">Shrimp</label>
+                <input type="checkbox" value="1">
+            </div>
+            <div class="formGroup2">
+                <label for="">Extra Shrimp</label>
+                <input type="checkbox" value="1">
+            </div>
+            <div class="formGroup2">
+                <label for="">Triple cheese</label>
+                <input type="checkbox" value="1">
+            </div>
+            <h3>Choose Delivery</h3>
+            <select name="delivery" id="deliveryInput">
+                <option selected disabled value="empty">select..</option>
+                <option value="home">Delivery Home (+5€)</option>
+                <option value="eat in">Eat in</option>
+                <option value="pick up">Pickup food</option>
+            </select>
+    </section>
+    <section id="output-box">
+        <h2>Your Order Summary</h2>
+        <div class="formGroup3">
+            <label for="nameOutput">Your name is: </label>
+            <p id="nameOutput"></p>
+        </div>
+        <div class="formGroup3">
+            <label for="pizzaPrice">Pizza size choice: </label>
+            <p id="pizzaPrice"></p>
+        </div>
+        <div class="formGroup3">
+            <label for="extraToppingsSum">Extra toppings: </label>
+            <p id="extraToppingsSum"></p>
+        </div>
+        <div class="formGroup3">
+            <label for="deliveryPrice">Delivery costs: </label>
+            <p id="deliveryPrice"></p>
+        </div>
+        <div class="formGroup3">
+            <label for="totalPrice">Total: </label>
+            <p id="totalPrice"></p>
+        </div>
+        <button>
+            Submit Order
+        </button>
+        </form>
+    </section>
+    <script src="main.js"></script>
+</body>
+
+</html>
